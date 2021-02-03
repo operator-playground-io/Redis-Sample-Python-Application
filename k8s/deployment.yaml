@@ -25,4 +25,4 @@ spec:
         - name: PASSWORD
           value: password
         ports:
-        - containerPort: 5000
+        - containerPort: 6000
