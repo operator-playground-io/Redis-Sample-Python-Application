@@ -8,6 +8,6 @@ spec:
     app: credential-manager
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 5000
+      port: 6000
+      targetPort: 6000
       nodePort: 30007
