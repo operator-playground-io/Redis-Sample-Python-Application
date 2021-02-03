@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: credential-manager-deployment
+  labels:
+    app: credential-manager
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: credential-manager
+  template:
+    metadata:
+      labels:
+        app: credential-manager
+    spec:
+      containers:
+      - name: credential-manager
+        image: reusin/credential-manager:v2
+        env:
+        - name: HOST
+          value: 127.0.0.1
+        - name: PORT
+          value: 30002
+        - name: PASSWORD
+          value: password
+        ports:
+        - containerPort: 5000

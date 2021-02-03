@@ -1,1 +1,0 @@
-# Redis-Sample-Python-Application

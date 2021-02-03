@@ -8,6 +8,7 @@ Created on Thu Jan 28 14:35:59 2021
 from flask import Flask, render_template, request
 import redis
 import json
+import sys
 
 app = Flask(__name__)
 
@@ -19,7 +20,8 @@ def connect(host, password, port):
     #r = "Dummy"
     return r
 
-redis_conn = connect(data["host"], data["password"], data["port"])
+#redis_conn = connect(data["host"], data["password"], data["port"])
+redis_conn = connect(sys.argv[1], sys.argv[3], sys.argv[2])
 
 #Home page
 @app.route('/') 
