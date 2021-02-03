@@ -21,7 +21,7 @@ spec:
         - name: HOST
           value: 127.0.0.1
         - name: PORT
-          value: 30002
+          value: "30002"
         - name: PASSWORD
           value: password
         ports:
