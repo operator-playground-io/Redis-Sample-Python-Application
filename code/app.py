@@ -57,4 +57,4 @@ def delete():
     redis_conn.delete(data["account"])
     return {"status": "success"}
 
-app.run()
+app.run(host="0.0.0.0", port="6000")
