@@ -17,6 +17,6 @@ deploy:
 portForward:
   - resourceType: service
     resourceName: credential-manager
-    port: 5000
+    port: 6000
     address: 0.0.0.0
-    localPort: 5000
+    localPort: 6000
